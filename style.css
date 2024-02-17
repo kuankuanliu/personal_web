@@ -1,3 +1,4 @@
+/* Base Page Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -13,18 +14,17 @@ header {
     padding: 1em;
 }
 
-#work-experience {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-#work-experience {
-    max-width: calc(100% - 100px); /* Adjust the width taking into account the padding */
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -42,18 +42,51 @@ nav a {
     font-weight: bold;
 }
 
-.main-image {
-    display: flex;
-    justify-content: center;
-    padding: 2em;
-}
-
-/* Base styles */
-.main-image, #about {
+/* Section Styles */
+.main-image, #about, #work-experience {
     padding: 1em;
 }
 
-/* Flex container for larger screens */
+#work-experience {
+    max-width: calc(100% - 100px); /* Adjust the width taking into account the padding */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.job h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.job p {
+    font-style: italic;
+    color: #666;
+}
+
+.job ul {
+    list-style-type: square;
+}
+
+.job li {
+    margin-bottom: 0.5em;
+}
+
+/* Contact Container Styles */
+.contact-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: -60px; /* Adjust if your header height is different */
+}
+
+.contact-container h1, .contact-container p {
+    margin-bottom: 0.5em;
+}
+
+/* Responsive Design Adjustments */
 @media (min-width: 768px) {
     .content-flex {
         display: flex;
@@ -62,12 +95,12 @@ nav a {
     }
 
     .main-image, #about {
-        flex: 2; /* Each child will take up an equal amount of space */
+        flex: 1; /* Each child will take up an equal amount of space */
     }
 
     .main-image img {
         max-width: 70%;
-        height: auto; 
+        height: auto;
         border-radius: 50%;
     }
 
@@ -76,32 +109,6 @@ nav a {
     }
 }
 
-.contact-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* Adjust the height as needed */
-    margin-top: -60px; /* Adjust if your header height is different */
-}
-
-.contact-container h1 {
-    margin-bottom: 1em;
-}
-
-.contact-container p {
-    margin-bottom: 0.5em;
-}
-
-/* Ensure the footer is at the bottom */
-footer {
-    position: static;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Styles for mobile screens */
 @media (max-width: 767px) {
     .content-flex {
         display: block;
@@ -123,43 +130,3 @@ footer {
         text-align: center;
     }
 }
-
-.social-media a {
-    margin: 0 0.5em;
-}
-
-.social-media img {
-    width: 24px; /* Adjust icon size as needed */
-    height: auto;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-
-/* Add this to your style.css */
-.job h3 {
-    color: #333; /* Change as needed */
-    margin-bottom: 0.5em;
-}
-
-.job p {
-    font-style: italic;
-    color: #666; /* Change as needed */
-}
-
-.job ul {
-    list-style-type: square; /* Or choose another style type */
-}
-
-.job li {
-    margin-bottom: 0.5em;
-
-

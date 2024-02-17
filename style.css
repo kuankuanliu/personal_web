@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Or any color you prefer */
+}
+
+header {
+    background-color: #333; /* Dark background for the header */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+/* Base styles */
+.main-image, #about {
+    padding: 1em;
+}
+
+/* Flex container for larger screens */
+@media (min-width: 768px) {
+    .content-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-image, #about {
+        flex: 2; /* Each child will take up an equal amount of space */
+    }
+
+    .main-image img {
+        max-width: 70%;
+        height: auto; 
+        border-radius: 50%;
+    }
+
+    #about {
+        text-align: left;
+    }
+}
+
+/* Styles for mobile screens */
+@media (max-width: 767px) {
+    .content-flex {
+        display: block;
+    }
+
+    .main-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-image img {
+        max-width: 40%; /* Adjust size as needed for smaller screens */
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 1em; /* Add space below the image */
+    }
+
+    #about {
+        text-align: center;
+    }
+}
+
+.social-media a {
+    margin: 0 0.5em;
+}
+
+.social-media img {
+    width: 24px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Add this to your style.css */
+.job h3 {
+    color: #333; /* Change as needed */
+    margin-bottom: 0.5em;
+}
+
+.job p {
+    font-style: italic;
+    color: #666; /* Change as needed */
+}
+
+.job ul {
+    list-style-type: square; /* Or choose another style type */
+}
+
+.job li {
+    margin-bottom: 0.5em;
+
+

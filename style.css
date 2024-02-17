@@ -51,6 +51,8 @@ nav a {
     max-width: calc(100% - 100px); /* Adjust the width taking into account the padding */
     margin-left: auto;
     margin-right: auto;
+    padding: 0 50px;
+    padding-bottom: 100px; /* Adds 50px padding at the bottom */
 }
 
 .job h3 {

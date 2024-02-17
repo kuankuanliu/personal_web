@@ -64,6 +64,31 @@ nav a {
     }
 }
 
+.contact-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust the height as needed */
+    margin-top: -60px; /* Adjust if your header height is different */
+}
+
+.contact-container h1 {
+    margin-bottom: 1em;
+}
+
+.contact-container p {
+    margin-bottom: 0.5em;
+}
+
+/* Ensure the footer is at the bottom */
+footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Styles for mobile screens */
 @media (max-width: 767px) {
     .content-flex {

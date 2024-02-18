@@ -88,6 +88,25 @@ nav a {
     margin-bottom: 0.5em;
 }
 
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust the height to ensure vertical centering */
+    text-align: center;
+}
+
+.project-container a {
+    font-size: 20px; /* Adjust based on your preference */
+    color: #0077b5; /* GitHub blue or any color you prefer */
+    text-decoration: none; /* Optional: removes underline from link */
+}
+
+.project-container a:hover {
+    text-decoration: underline; /* Adds underline on hover for better UX */
+}
+
+
 /* Responsive Design Adjustments */
 @media (min-width: 768px) {
     .content-flex {
